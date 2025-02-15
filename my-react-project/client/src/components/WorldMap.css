@@ -1,0 +1,28 @@
+.map-container {
+    width: 90vw;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+    border: 5px solid red;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+svg path {
+    fill: #00394f;
+    stroke: #eee;
+    stroke-width: 0.25;
+}
+
+svg path:hover {
+    fill: #006284;
+    transition: 0.3s;
+    cursor: pointer;
+}
