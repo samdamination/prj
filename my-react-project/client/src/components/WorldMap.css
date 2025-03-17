@@ -1,12 +1,25 @@
+.state-name-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 10;
+}
+
 .map-container {
-    width: 90vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rebeccapurple;
-    border: 5px solid red;
+    position: relative;
 }
 
 svg {
@@ -25,4 +38,16 @@ svg path:hover {
     fill: #006284;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    pointer-events: none;
 }
